@@ -10,7 +10,7 @@ var swig = require('swig');
 module.exports = app;
 
 //swig setup
-app.set('views', __dirname, + '/views');
+app.set('views', (__dirname + '/views'));
 app.set('view engine', 'html');
 app.engine('html', swig.renderFile);
 swig.setDefaults({ cache: false });
